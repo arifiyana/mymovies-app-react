@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+  background-color: #bb8e11;
+  box-shadow: 0px 3px 6px #c1c3c736;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar h1 {
+  color: white;
+  position: relative;
+  font-family: fantasy;
+}
+.navbar h1::before {
+  content: '- - : M y M o v i e : - -';
+  font-family: fantasy;
+  width: 100%;
+  height: 90%;
+  color: #19345e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid;
+  animation: slide 3s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.nav-menu {
+  margin-top: 30px;
+}
+.about,
+.team,
+.blog {
+  margin-left: 25px;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #19345e;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 19px;
+}
+.nav-menu a:hover {
+  color: white;
+  transition: 0.5s;
+}
